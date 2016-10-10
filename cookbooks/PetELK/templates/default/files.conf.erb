@@ -1,0 +1,23 @@
+input {
+  file {
+    path => "/data/dumpfolder/*.json"
+    codec => "json"
+    sincedb_path => "/var/cache/logstash/.sincedb"
+    start_position => "beginning"
+  }
+}
+
+filter {
+  if "_jsonparsefailure" in [tags] {
+    drop { }
+  }
+}
+
+output {
+  #stdout { codec => rubydebug }
+  elasticsearch {
+    hosts => ["127.0.0.1:9200"]
+    user => "elastic"
+    password => "changeme"
+  }
+}
