@@ -42,6 +42,6 @@ After the setup completes, your Kibana interface will be available at http://{IP
   
 **CREDS:**  The default user for Kibana is `elastic` with a password of `changeme`.  Note that if you change this account, you'll also need to adjust the logstash config in `/etc/logstash/conf.d/files.conf`.
    
-**PLUGINS:**  The beta version of the Elastic X-Pack plugin has been installed.  This includes authentication, graph analysis, timelion, etc.
+**PLUGINS:**  The beta version of the Elastic X-Pack plugin has been installed. This includes authentication, graph analysis, monitoring, and reporting. This is a commercial plugin with a 30 day trial license.
 
 **EXAMPLE DATA:**  The examples folder contains some JSON bro data that you can gunzip and move to `/data/dumpfolder` to test things out.
