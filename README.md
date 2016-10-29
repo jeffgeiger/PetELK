@@ -9,7 +9,7 @@
 ```
 
 ### Purpose  
-PetELK is a quick way to build a working, reasonably tuned ELK stack (version 5.0-beta) for ad-hoc data analysis.  This can be done using vagrant, or the chef recipe can be applied to a physical system or VM.  This system is written for and tested on CentOS or RHEL 7.2.
+PetELK is a quick way to build a working, reasonably tuned ELK stack for ad-hoc data analysis.  This can be done using vagrant, or the chef recipe can be applied to a physical system or VM.  This system is written for and tested on CentOS or RHEL 7.2.
 
 
 ### Directions

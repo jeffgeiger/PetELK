@@ -153,7 +153,7 @@ end
 #######################################################
 yum_repository 'elasticsearch-5.x' do
   description 'Elasticsearch repository for 5.x packages'
-  baseurl 'https://artifacts.elastic.co/packages/5.x-prerelease/yum'
+  baseurl 'https://artifacts.elastic.co/packages/5.x/yum'
   gpgcheck false
   gpgkey 'https://artifacts.elastic.co/GPG-KEY-elasticsearch'
   action :create
