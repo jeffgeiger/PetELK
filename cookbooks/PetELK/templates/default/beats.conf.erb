@@ -1,0 +1,20 @@
+input {
+  beats {
+    port => 5044
+  }
+}
+
+filter {
+  json {
+    source => "message"
+  }
+}
+
+output {
+  #stdout { codec => rubydebug }
+  elasticsearch {
+    hosts => ["127.0.0.1:9200"]
+    user => "elastic"
+    password => "changeme"
+  }
+}

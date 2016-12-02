@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "bento/centos-7.2"
   config.vm.network "forwarded_port", guest: 80, host: 8000
   config.vm.network "forwarded_port", guest: 9200, host: 9200
+  config.vm.network "forwarded_port", guest: 5044, host: 5044
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "9216"
   end
