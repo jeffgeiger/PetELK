@@ -326,6 +326,10 @@ template '/etc/logstash/conf.d/files.conf' do
   source 'files.conf.erb'
 end
 
+template '/etc/logstash/conf.d/beats.conf' do
+  source 'beats.conf.erb'
+end 
+
 service 'logstash' do
   action [ :enable, :start ]
 end
